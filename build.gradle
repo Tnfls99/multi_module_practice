@@ -36,5 +36,15 @@ subprojects {
     test {
         useJUnitPlatform()
     }
+
 }
+
+task copyYML(type: Copy){
+    copy {
+        from './practice_yml_importer/src/main/resources'
+        include "*.yml"
+        into './common/src/main/resources'
+    }
+}
+
 
