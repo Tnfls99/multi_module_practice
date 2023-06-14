@@ -1,0 +1,3 @@
+[submodule "practice_yml_importer"]
+	path = practice_yml_importer
+	url = https://github.com/Tnfls99/practice_yml_importer.git
