@@ -18,8 +18,9 @@ public class MemberService {
 	}
 
 	@Transactional
-	public void saveMember(MemberDto memberDto){
-		memberRepository.save(memberDto.toMember());
+	public Long saveMember(MemberDto memberDto){
+		Member member = memberRepository.save(memberDto.toMember());
+		return member.getId();
 	}
 
 	public MemberDto findMemberById(Long id){

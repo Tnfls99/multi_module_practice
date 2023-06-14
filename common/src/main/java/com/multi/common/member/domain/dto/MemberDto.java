@@ -9,8 +9,8 @@ public record MemberDto(
 
 	public Member toMember(){
 		return new Member(
-			this.name,
-			this.nickname
+			name,
+			nickname
 		);
 	}
 

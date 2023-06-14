@@ -14,8 +14,8 @@ public class ProjectFacade {
 		this.memberService = memberService;
 	}
 
-	public void saveMember(MemberDto memberDto){
-		memberService.saveMember(memberDto);
+	public Long saveMember(MemberDto memberDto){
+		return memberService.saveMember(memberDto);
 	}
 
 	public MemberDto findMemberById(Long id){
