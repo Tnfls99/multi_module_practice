@@ -1,4 +1,5 @@
 rootProject.name = 'multi_module_project'
 include 'web'
 include 'common'
+include 'yml_importer'
 
